@@ -1,0 +1,28 @@
+*{
+  box-sizing: border-box;
+}
+
+h3{
+  margin-top: 40px;
+}
+
+table{
+  border-collapse:collapse;
+  margin:20px;
+}
+
+td, th{
+  text-align:center;
+  padding:10px;
+}
+
+td{
+  border-bottom:1px solid black;
+  
+}
+
+.invitebtn{
+  border:1px solid black;
+  padding:2px 10px 2px 10px;
+  box-shadow:2px 2px 2px black;
+}
