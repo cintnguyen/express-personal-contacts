@@ -8,43 +8,45 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <h1>Contacts</h1>
+  <section class = "whole">
+    <h1>Your Contacts</h1>
 
-  <form action="/contacts" method="POST">
-    <input type="text" placeholder="name" name="name">
-    <input type="email" placeholder="email" name="email">
-    <input type="number" placeholder="number" name="number">
-    <button type="submit">Add Contact</button>
-  </form>
+    <form action="/contacts" method="POST">
+      <input type="text" placeholder="name" name="name">
+      <input type="email" placeholder="email" name="email">
+      <input type="number" placeholder="number" name="number">
+      <button type="submit">Add Contact</button>
+    </form>
 
-  <h3>Contact Information</h3>
+    <h3>Contact Information</h3>
 
-  <table>
-    <thead>
-      <tr>
-        <th>Name</th>
-        <th>Email</th>
-        <th>Number</th>
-        <th>Invite Status</th>
-      </tr>
-    </thead>
-    <tbody>
-      <% for(var i=0; i<contacts.length; i++) {%>
+    <table>
+      <thead>
         <tr>
-          <td id="<%=contacts[i]._id%>"><%=contacts[i].name %></td>
-          <td id="<%=contacts[i]._id%>"><%=contacts[i].email %></td>
-          <td id="<%=contacts[i]._id%>"><%=contacts[i].number %></td>
-          <td class="inviteStatus" id="<%=contacts[i]._id%>"><%=contacts[i].inviteStatus %></td>
-          <td><span class="invitebtn">Invite</span></td>
-          <td><i class="fa fa-trash" aria-hidden="true"></i></td>
+          <th>Name</th>
+          <th>Email</th>
+          <th>Number</th>
+          <th>Invite Status</th>
         </tr>
-      <% } %>
-    </tbody>
-  </table>
+      </thead>
+      <tbody>
+        <% for(var i=0; i<contacts.length; i++) {%>
+          <tr>
+            <td id="<%=contacts[i]._id%>"><%=contacts[i].name %></td>
+            <td id="<%=contacts[i]._id%>"><%=contacts[i].email %></td>
+            <td id="<%=contacts[i]._id%>"><%=contacts[i].number %></td>
+            <td class="inviteStatus" id="<%=contacts[i]._id%>"><%=contacts[i].inviteStatus %></td>
+            <td><span class="invitebtn">Invite</span></td>
+            <td><i class="fa fa-trash" aria-hidden="true"></i></td>
+          </tr>
+        <% } %>
+      </tbody>
+    </table>
 
 
-  <section>
-      <button class="clear">Clear All Contacts</button>
+    <section>
+        <button class="clear">Clear All Contacts</button>
+    </section>
   </section>
 
   <script src="main.js"></script>

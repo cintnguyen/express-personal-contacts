@@ -1,5 +1,6 @@
 *{
   box-sizing: border-box;
+  font-family:'Times New Roman', Times, serif;
 }
 
 h3{
@@ -26,3 +27,35 @@ td{
   padding:2px 10px 2px 10px;
   box-shadow:2px 2px 2px black;
 }
+
+body{
+  background:url(backgroundOne.png) no-repeat;
+  background-size:cover;
+  min-height:100vh;
+  margin:0;
+}
+
+.whole{
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+  min-height:100vh;
+}
+
+input{
+  border:rgba(56,22,38) 1px solid;
+  border-radius:10px;
+  text-align:center;
+}
+
+button{
+  background:transparent;
+  box-shadow:3px 3px 2px;
+}
+
+button:active{
+  transform: translateY(4px);
+}
+
+
