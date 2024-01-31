@@ -1,9 +1,13 @@
 # Contact App
 Your virtual contact book revamped! 📲 Keep all your contacts in one place, effortlessly manage details, and track invite statuses for every event. Say goodbye to scattered contacts and hello to seamless organization!
 
+Check it out here - X
+
 ## Tech Used:
 - Javascript, Node.js, Express, MongoDB, HTML / EJS, CSS
 - CRUD
+
+![ContactsApp](public/readmeimage.png)
 
 ## On your own machine: 
 
