@@ -5,7 +5,7 @@ Check it out here - X
 
 ## Tech Used:
 - Javascript, Node.js, Express, MongoDB, HTML / EJS, CSS
-- CRUD
+- Full-stack CRUD app
 
 ![ContactsApp](public/readmeimage.png)
 
